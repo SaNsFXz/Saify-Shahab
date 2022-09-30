@@ -14,7 +14,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: montserrat;
-  background-image: url('/Images/bg5.jpg');
+  background-image: url('bg5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
