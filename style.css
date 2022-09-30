@@ -1,0 +1,362 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: montserrat;
+  background-image: url('/Images/bg5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+p {
+  color: white;
+}
+
+nav {
+  background: #0082e6;
+  height: 63px;
+  width: 100%;
+  z-index: 90;
+  position: fixed;
+  top: 0px;
+}
+
+label.logo {
+  color: white;
+  font-size: 23px;
+  line-height: 63px;
+  padding: 0 17px;
+  font-weight: bold;
+}
+
+nav,.ulul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul .lili {
+  display: inline-block;
+  line-height: 63px;
+  margin: 0 5px;
+}
+
+nav .ulul .lili a {
+  color: white;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.checkbtn {
+  font-size: 23px;
+  color: white;
+  float: right;
+  line-height: 63px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Home Page */
+  
+.perpage {
+  margin-top: 75%;
+  padding: 0px;
+}
+  
+.kanjut {
+  font-size: 45px;
+}
+
+.kanjut2 {
+  font-weight: bold;
+  padding-top: 0px;
+  font-size: 65px;
+}
+
+.kanjut3 {
+  font-size: 35px;
+}
+
+.kanjut,.kanjut2,.kanjut3,.aboutmebtn {
+  margin-left: 60px;
+}
+  
+  .auto-type-1 {
+    font-size:;
+    color: #69beff;
+    font-weight: bold;
+}
+
+/* About me button */
+
+.aboutmebtn {
+  color: white;
+  text-decoration: none;
+  background: #0082e6;
+  padding: 10px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+/* box */
+
+.wrapper {
+  margin: 0;
+ position: relative;
+ width: 100%;
+ height: 4200px;
+ top: 1000px;
+ background-color: white;
+}
+
+/* About Me Page */
+
+.aboutme-pg,.skills-pg,.sosmed-pg {
+  padding-top: 720px;
+}
+
+.h1-all {
+  font-size: 60px;
+  text-align: center;
+}
+
+.sub-all {
+  text-align: center;
+  font-size: 34px;
+}
+
+.sub-whoiam {
+  color: #0082e6;
+}
+
+.p-aboutme,.p-skills,.p-sosmed {
+  font-size: 32px;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.judul-p-aboutme,.judul-p-skills {
+  text-align: center;
+  font-size: 34px;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.auto-type-2 {
+  color: #0082e6;
+}
+
+/* Bagian Skills */
+
+
+/* Bagian Sosmed */
+
+.ul-sosmed {
+  font-size: 40px;
+  float: left;
+  padding-top: 60px;
+  padding-left: 60px;
+  line-height: 100px;
+}
+
+.a-sosmed {
+  color: black;
+}
+
+/* Bagian Footer */
+
+footer {
+  font-size: 32px;
+    color: black;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    top: 950px;
+    padding: 50px 10px 50px 10px;
+}
+ 
+footer,span,a {
+    color: #69beff;
+    text-decoration: none;
+}
+
+/* Bagian Responsive */
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 23px;
+    padding-left: 30px;
+  }
+  
+  nav ul .lili a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  .ulul {
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    background: #2d4675;
+    top: 63px;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav .ulul .lili {
+    display: block;
+    margin: 85px 0px;
+    line-height: 30px;
+  }
+  nav .ulul .lili a {
+    font-size: 20px;
+  }
+  
+  #check:checked ~ ul {
+    left: 25%;
+    
+    a.active,a:hover {
+      background: none;
+    }
+}
+
+/* Responsive Perkenalan */
+
+@media (max-width: 952px) {
+  .perpage {
+  margin-top: 70%;
+  padding: 0px;
+}
+  
+.kanjut {
+  font-size: 20px;
+}
+
+.kanjut2 {
+  font-weight: bold;
+  padding-top: 0px;
+  font-size: 32px;
+}
+
+.kanjut3 {
+  font-size: 16px;
+}
+
+.kanjut,.kanjut2,.kanjut3,.aboutmebtn {
+  margin-left: 30px;
+}
+  
+  .auto-type-1 {
+    color: #69beff;
+    font-weight: bold;
+}
+
+/* Responsive Box */
+
+.wrapper {
+  margin: 0;
+ position: relative;
+ width: 100%;
+ height: 1650px;
+ top: 325px;
+ background-color: white;
+}
+
+/* Responsive Isi Box*/
+
+.aboutme-pg,.skills-pg,.sosmed-pg {
+  padding-top: 175px;
+}
+
+.h1-all {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sub-all {
+  text-align: center;
+  font-size: 17px;
+}
+
+.sub-whoiam {
+  color: #0082e6;
+}
+
+.p-aboutme,.p-skills,.p-sosmed {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.judul-p-aboutme,.judul-p-skills {
+  text-align: left;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.auto-type-2 {
+  color: #0082e6;
+}
+
+/* Bagian Skills */
+
+
+/* Bagian Sosmed */
+
+.ul-sosmed {
+  font-size: 20px;
+  float: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  line-height: 50px;
+}
+
+.a-sosmed {
+  color: black;
+}
+
+
+footer {
+  font-size: 16px;
+    color: black;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    padding: 25px 5px 25px 5px;
+}
+ 
+footer,span,a {
+    color: #69beff;
+    text-decoration: none;
+}
+
+}
